@@ -15,5 +15,14 @@ alias s="rspec"
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
+# google search within shell
+ggx() {·
+  lynx -accept_all_cookies https://www.google.com/search?q=${(j:+:)*}
+}
+
+# find aliases containing word
+alias alias?='alias | grep'
+
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
