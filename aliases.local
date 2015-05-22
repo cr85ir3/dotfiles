@@ -1,3 +1,0 @@
-
-# use 'hub' with 'git hub'
-eval "$(hub alias -s)"
