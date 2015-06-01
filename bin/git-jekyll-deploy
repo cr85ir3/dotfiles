@@ -1,0 +1,5 @@
+#!/bin/sh
+git branch -D master
+git checkout -b master
+git checkout source
+git push origin `git subtree split --prefix _site master`:master --force
