@@ -72,3 +72,6 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+# Local config
+[[ -f ~/.zprofile.local ]] && source ~/.zprofile.local
