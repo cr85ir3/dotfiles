@@ -106,3 +106,5 @@ _load_settings "$HOME/.zsh/configs"
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
+
+source /Users/cooperm/.iterm2_shell_integration.zsh
