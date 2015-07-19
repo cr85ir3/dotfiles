@@ -1,0 +1,5 @@
+# google search within shell
+ggx() {·
+  lynx -accept_all_cookies https://www.google.com/search?q=$1
+}
+

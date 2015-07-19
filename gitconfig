@@ -25,10 +25,7 @@
   path = ~/.gitconfig.local
 [user]
 	name = Cooper Maruyama
-	email = cooperm@susteen.com 
-[merge]
-  ff = only
-  tool = sublimerge
+	email = cooperm@susteen.com
 
 [mergetool "sublimerge"]
   cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
