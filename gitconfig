@@ -14,8 +14,7 @@
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
-[merge]
-  ff = only
+	editor = vim
 [commit]
   template = ~/.gitmessage
 [fetch]
@@ -24,3 +23,19 @@
   autosquash = true
 [include]
   path = ~/.gitconfig.local
+[user]
+	name = Cooper Maruyama
+	email = cooperm@susteen.com 
+[merge]
+  ff = only
+  tool = sublimerge
+
+[mergetool "sublimerge"]
+  cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
+  trustExitCode = false
+
+[diff]
+  tool = sublimerge
+
+[difftool "sublimerge"]
+  cmd = subl -n --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\\\"left_read_only\\\": true, \\\"right_read_only\\\": true}\"

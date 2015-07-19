@@ -1,0 +1,5 @@
+# Testing
+# If this works as expected, after running rcup,
+# I should be able to put something in ~/.testingrc.local
+# and someting should make it run!
+alias tftestingrc='echo "WROK"'
