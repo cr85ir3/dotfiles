@@ -88,17 +88,11 @@ zstyle ':prezto:module:git:status:ignore' submodules 'all'
 
 #
 # Prompt
-#
-
-# Cooper's favorite prompts
-cooperFaves=(sorin paradox agnoster minimali random)
-favIndex=$(( $RANDOM % 5 ))
-
 
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme $cooperFaves[$favIndex]
+zstyle ':prezto:module:prompt' theme paradox
 
 #
 # Ruby
