@@ -40,8 +40,8 @@ zstyle ':prezto:load' pmodule \
   'node'  \
   'osx'  \
   'rsync' \
-  'tmux'  \
-  'syntax-highlighting' \
+  'tmux'
+  #'syntax-highlighting' \
 #
 # Editor
 #
