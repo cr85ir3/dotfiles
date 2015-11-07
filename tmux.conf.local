@@ -24,7 +24,11 @@ set -g status-right-length 150
 # \#(hostname - s)#[fg=white]::##[fg=yellow]#(curl ipecho.net/plain;echo)"
 
 # powerline for tmux
-source "$HOME/lab/lib/powerline/powerline/bindings/tmux/powerline.conf"
+if [[ -n $LIB_DIRECTORY ]]; then
+  source "$HOME/lib/powerline/powerline/bindings/tmux/powerline.conf";
+else
+  source "$LIB_DIRECTORY/powerline/powerline/bindings/tmux/powerline.conf";
+fi
 
 # mouse stuff
 set-window-option -g mode-mouse on
