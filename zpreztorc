@@ -91,7 +91,7 @@ zstyle ':prezto:module:git:status:ignore' submodules 'all'
 #
 
 # Cooper's favorite prompts
-cooperFaves=(sorin paradox agnoster minimali random)
+cooperFaves=('sorin' 'paradox' 'agnoster' 'minimal' 'random')
 favIndex=$(( $RANDOM % 5 ))
 
 
