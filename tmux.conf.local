@@ -24,11 +24,9 @@ set -g status-right-length 150
 # \#(hostname - s)#[fg=white]::##[fg=yellow]#(curl ipecho.net/plain;echo)"
 
 # powerline for tmux
-if [[ -n $LIB_DIRECTORY ]]; then
-  source "$HOME/lib/powerline/powerline/bindings/tmux/powerline.conf";
-else
-  source "$LIB_DIRECTORY/powerline/powerline/bindings/tmux/powerline.conf";
-fi
+run-shell 'source ~/.zshenv'
+set-option -g lib-dir '$LIB_DIRECTORY'
+if '[[ $LIB_DIRECTORY =~ "$HOME/lib" ]]' 'source "$HOME/lib/powerline/powerline/bindings/tmux/powerline.conf"' 'source "$HOME/lab/lib/powerline/powerline/bindings/tmux/powerline.conf'
 
 # mouse stuff
 set-window-option -g mode-mouse on
