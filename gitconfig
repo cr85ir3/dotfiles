@@ -27,7 +27,7 @@
 	name = Cooper Maruyama
 	email = cooperm@susteen.com
 [merge]
-  ff = only
+#  ff = only
   tool = sublimerge
 
 [mergetool "sublimerge"]
