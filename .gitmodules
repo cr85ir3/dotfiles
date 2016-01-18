@@ -1,6 +1,6 @@
 [submodule "zprezto"]
 	path = zprezto
 	url = git@github.com:cr85ir3/prezto.git
-[submodule "powerline"]
-  path = lib/powerline
-  url = git@github.com:powerline/powerline.git
+[submodule "lib/powerline"]
+	path = lib/powerline
+	url = https://github.com/powerline/powerline.git
