@@ -24,8 +24,8 @@
 [include]
   path = ~/.gitconfig.local
 [user]
-	name = Cooper Maruyama
-	email = cooperm@susteen.com
+	name = Yuuj Maruyama
+	email = cr85ir3@mac.com
 [merge]
   ff = false
   tool = sublimerge

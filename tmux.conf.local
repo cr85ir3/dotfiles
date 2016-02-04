@@ -62,6 +62,10 @@ set -g @tpm_plugins '              \
 # git@github.com/user/plugin     \
 # git@bitbucket.com/user/plugin  \
 
-# Initializes TMUX plugin manager.
+# Test for TPM and install if missing.
+if "test ! -d ~/.tmux/plugins/tpm" \
+   "run 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'"
+
+# Initializes Tmux plugin manager. 
 # Keep this line at the very bottom of tmux.conf.
 run-shell '~/.tmux/plugins/tpm/tpm'
