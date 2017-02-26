@@ -15,6 +15,7 @@
 	excludesfile = /Users/yuujm/.gitignore
   autocrlf = input
 	editor = vim
+	trustctime = false
 [commit]
   template = ~/.gitmessage
 [fetch]
