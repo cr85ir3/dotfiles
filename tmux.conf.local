@@ -26,12 +26,10 @@ set -g status-right-length 150
 # powerline for tmux
 source "$HOME/.lib/powerline/powerline/bindings/tmux/powerline.conf"
 
-# mouse stuff
-set-window-option -g mode-mouse on
-set-option -g mouse-select-pane on
-set -g mouse-resize-pane on
-set -g mouse-select-window on
-
+# mouse stuff (updated for tmux 2.1)
+set -g mouse on
+bind -n WheelUpPane   select-pane -t= \; copy-mode -e \; send-keys -M
+bind -n WheelDownPane select-pane -t= \;                 send-keys -M
 
 
 # (hostname - s)#[fg=white]::##[fg=yellow]#(curl ipecho.net/plain;echo)"
@@ -62,6 +60,10 @@ set -g @tpm_plugins '              \
 # git@github.com/user/plugin     \
 # git@bitbucket.com/user/plugin  \
 
-# Initializes TMUX plugin manager.
+# Test for TPM and install if missing.
+if "test ! -d ~/.tmux/plugins/tpm" \
+   "run 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'"
+
+# Initializes Tmux plugin manager. 
 # Keep this line at the very bottom of tmux.conf.
 run-shell '~/.tmux/plugins/tpm/tpm'
